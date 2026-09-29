@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-27-lora-store-forward",
+  "eyebrow": "PICOKIT // LESSON 27",
+  "title": "PICOKIT // STORE FORWARD",
+  "subtitle": "BUFFER + FLUSH + AUTHENTICATED HEARTBEAT",
+  "accent": "#47FF7E",
+  "dim": "#2C9E4E",
+  "white": "#DAF6EC",
+  "cyan": "#7FD8E0",
+  "bg": "#041108",
+  "bg_edge": "#010502",
+  "icon": "clock",
+  "panel_status": "LINK DOWN  ·  BACKLOG 2  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "LINK",
+      "value": "DOWN"
+    },
+    {
+      "label": "BACKLOG",
+      "value": "2"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-35 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00027  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] link down  reading buffered  backlog 2",
+    "[+] link up  backlog flushed  rssi -35  snr 9.0"
+  ],
+  "categories": [
+    "BUFFER",
+    "FLUSH",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "SF-01",
+      "label": "sample",
+      "value": "2 s"
+    },
+    {
+      "tag": "SF-02",
+      "label": "store",
+      "value": "255 max"
+    },
+    {
+      "tag": "SF-03",
+      "label": "flush",
+      "value": "in order"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ STORE ]=="
+  ],
+  "layout": "split",
+  "stat": "DOWN"
+}
